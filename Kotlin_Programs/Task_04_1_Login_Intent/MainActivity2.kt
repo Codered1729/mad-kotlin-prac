@@ -10,6 +10,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+/*
+INSTRUCTIONS:
+Secondary activity opened on successful login. Match package name in line 1 to your project.
+*/
+
 class MainActivity2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

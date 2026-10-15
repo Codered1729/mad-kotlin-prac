@@ -5,6 +5,11 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
+/*
+INSTRUCTIONS:
+Room Database instance. Match package name in line 1 to your project.
+*/
+
 @Database(entities = [Student::class], version = 1)
 abstract class StudentDatabase : RoomDatabase() {
     abstract fun studentdao(): StudentDao

@@ -25,7 +25,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
-// SETUP: Place 6 images named dice1, dice2, dice3, dice4, dice5, dice6 into app/src/main/res/drawable/
+/*
+INSTRUCTIONS:
+1. In app/src/main/res/drawable/ -> add 6 images:
+   dice1.png, dice2.png, dice3.png, dice4.png, dice5.png, dice6.png
+2. Match package name in line 1
+3. Click Run
+*/
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

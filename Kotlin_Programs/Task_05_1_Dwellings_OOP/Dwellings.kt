@@ -3,7 +3,11 @@ package com.example.dwellings
 import kotlin.math.PI
 import kotlin.math.sqrt
 
-// SETUP: Run this program by clicking the green Run arrow ▶ next to fun main() in Android Studio
+/*
+INSTRUCTIONS:
+1. Click the green Play arrow ▶ next to fun main() -> click Run 'DwellingsKt'
+2. Output displays in the Run console at the bottom
+*/
 
 fun main() {
     val squareCabin = SquareCabin(6, 50.0)

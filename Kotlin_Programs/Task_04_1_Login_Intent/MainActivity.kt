@@ -11,8 +11,14 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-// SETUP: Add MainActivity2 inside <application> in AndroidManifest.xml:
-// <activity android:name=".MainActivity2" android:exported="false" />
+/*
+INSTRUCTIONS:
+1. Project folder -> right click -> New -> Kotlin Class/File -> name: MainActivity2
+2. In app/src/main/AndroidManifest.xml -> inside <application>, add:
+   <activity android:name=".MainActivity2" android:exported="false" />
+3. Match package name in line 1 of both files
+4. Click Run -> Test credentials: Username "admin", Password "1234"
+*/
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

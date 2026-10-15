@@ -26,16 +26,36 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-// SETUP: In libs.versions.toml:
-// [versions] room = "2.8.5", ksp = "2.2.10-2.0.2"
-// [libraries] androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
-// androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
-// androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
-// [plugins] ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
-//
-// In app/build.gradle.kts:
-// plugins { alias(libs.plugins.ksp) }
-// dependencies { implementation(libs.androidx.room.runtime); implementation(libs.androidx.room.ktx); ksp(libs.androidx.room.compiler) }
+/*
+INSTRUCTIONS:
+1. Open gradle/libs.versions.toml:
+   - Under [versions]:
+       room = "2.8.5"
+       ksp = "2.2.10-2.0.2"
+   - Under [libraries]:
+       androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+       androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+       androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+   - Under [plugins]:
+       ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+2. Open app/build.gradle.kts:
+   - Inside plugins { ... }:
+       alias(libs.plugins.ksp)
+   - Inside dependencies { ... }:
+       implementation(libs.androidx.room.runtime)
+       implementation(libs.androidx.room.ktx)
+       ksp(libs.androidx.room.compiler)
+3. Click Sync Now
+
+4. In the same folder as MainActivity.kt -> create 3 Kotlin files:
+   - Student.kt
+   - StudentDao.kt
+   - StudentDatabase.kt
+5. Match package name in line 1 of all 4 files
+6. Click Run
+7. View database table: Top menu -> View -> Tool Windows -> App Inspection -> Database Inspector -> select student table
+*/
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

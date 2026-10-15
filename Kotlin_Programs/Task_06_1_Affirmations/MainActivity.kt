@@ -14,9 +14,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-data class Affirmation(val text: String, val image: Int)
+/*
+INSTRUCTIONS:
+1. In app/src/main/res/drawable/ -> add 3 images:
+   img1.png, img2.png, img3.png
+2. Match package name in line 1
+3. Click Run
+*/
 
-// SETUP: Place 3 images named img1, img2, img3 into app/src/main/res/drawable/
+data class Affirmation(val text: String, val image: Int)
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

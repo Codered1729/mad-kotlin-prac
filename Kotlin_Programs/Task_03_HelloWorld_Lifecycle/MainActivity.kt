@@ -15,6 +15,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
+/*
+INSTRUCTIONS:
+1. Create new project -> Empty Activity (Jetpack Compose)
+2. Match package name in line 1 to your project
+3. Click Run
+4. View output: Open Logcat window at bottom -> filter: Lifecycle
+*/
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

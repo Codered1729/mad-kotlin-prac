@@ -13,9 +13,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 
-// SETUP: In app/build.gradle.kts inside dependencies { ... } add:
-// implementation("androidx.compose.runtime:runtime-livedata:1.7.6")
-// implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+/*
+INSTRUCTIONS:
+1. In app/build.gradle.kts -> inside dependencies { ... }, add:
+   implementation("androidx.compose.runtime:runtime-livedata:1.7.6")
+   implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+2. Click Sync Now
+3. Project folder -> right click -> New -> Kotlin Class/File -> name: CounterViewModel
+4. Match package name in line 1 of both files
+5. Click Run
+*/
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

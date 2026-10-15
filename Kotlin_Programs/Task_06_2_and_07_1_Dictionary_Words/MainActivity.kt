@@ -15,8 +15,14 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 
-// SETUP: In app/build.gradle.kts inside dependencies { ... } add:
-// implementation("androidx.navigation:navigation-compose:2.8.5")
+/*
+INSTRUCTIONS:
+1. In app/build.gradle.kts -> inside dependencies { ... }, add:
+   implementation("androidx.navigation:navigation-compose:2.8.5")
+2. Click Sync Now
+3. Match package name in line 1
+4. Click Run
+*/
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
