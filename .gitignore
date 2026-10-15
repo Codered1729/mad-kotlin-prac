@@ -1,0 +1,30 @@
+# Word Documents & PDFs
+*.docx
+*.doc
+*.pdf
+*.odt
+
+# Android Studio & Gradle
+*.iml
+.gradle/
+local.properties
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python / Temp Files
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+*~

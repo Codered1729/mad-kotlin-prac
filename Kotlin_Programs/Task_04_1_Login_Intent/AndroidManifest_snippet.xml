@@ -1,0 +1,33 @@
+<!-- 
+IMPORTANT SETTING FOR TASK 4-1:
+In your project's app/src/main/AndroidManifest.xml, you MUST declare MainActivity2 
+inside the <application> ... </application> tag. 
+If not declared, clicking Login will result in ActivityNotFoundException!
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Main Launcher Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- REQUIRED FOR TASK 4-1: Second Activity Declaration -->
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+
+    </application>
+</manifest>
