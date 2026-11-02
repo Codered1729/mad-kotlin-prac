@@ -55,6 +55,7 @@ INSTRUCTIONS:
 5. Match package name in line 1 of all 4 files
 6. Click Run
 7. View database table: Top menu -> View -> Tool Windows -> App Inspection -> Database Inspector -> select student table
+8. android.disallowKotlinSourceSets=false in gradle.properties(project)
 */
 
 class MainActivity : ComponentActivity() {
